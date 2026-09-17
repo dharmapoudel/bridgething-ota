@@ -1,0 +1,38 @@
+{
+  "manifestVersion": 1,
+  "updatedAt": "2026-09-17T02:41:42Z",
+  "channels": {
+    "stable": {
+      "name": "stable",
+      "stability": "stable",
+      "isDefault": true,
+      "latest": "0.12.12+image.0.2.5",
+      "releases": [
+        "0.12.12+image.0.2.5"
+      ]
+    }
+  },
+  "releases": {
+    "0.12.12+image.0.2.5": {
+      "version": "0.12.12+image.0.2.5",
+      "channel": "stable",
+      "yanked": null,
+      "deprecated": false,
+      "builtinWebapps": {},
+      "wakeword": null,
+      "artifacts": {
+        "daemon": null,
+        "daemonZst": {
+          "size": 12763539,
+          "sha256": "c7ab1e91b20ed70f711a853ce0d485afa3f5d143fc0b2d357cafd4e65a77bc15"
+        },
+        "imageSwu": null,
+        "imageZck": null,
+        "imageBootZck": null,
+        "webapps": {},
+        "wakeword": null,
+        "daemonPatches": {}
+      }
+    }
+  }
+}
