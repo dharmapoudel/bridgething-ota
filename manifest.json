@@ -1,6 +1,6 @@
 {
-  "manifestVersion": 1,
-  "updatedAt": "2026-09-17T02:41:42Z",
+  "manifest_version": 1,
+  "updated_at": "2026-09-17T03:22:51Z",
   "channels": {
     "stable": {
       "name": "stable",
@@ -18,20 +18,20 @@
       "channel": "stable",
       "yanked": null,
       "deprecated": false,
-      "builtinWebapps": {},
+      "builtin_webapps": {},
       "wakeword": null,
       "artifacts": {
         "daemon": null,
-        "daemonZst": {
+        "daemon_zst": {
           "size": 12763539,
           "sha256": "c7ab1e91b20ed70f711a853ce0d485afa3f5d143fc0b2d357cafd4e65a77bc15"
         },
-        "imageSwu": null,
-        "imageZck": null,
-        "imageBootZck": null,
+        "image_swu": null,
+        "image_zck": null,
+        "image_boot_zck": null,
         "webapps": {},
         "wakeword": null,
-        "daemonPatches": {}
+        "daemon_patches": {}
       }
     }
   }
