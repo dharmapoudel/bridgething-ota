@@ -5,7 +5,7 @@
     "stable": {
       "name": "stable",
       "stability": "stable",
-      "isDefault": true,
+      "default": true,
       "latest": "0.12.12+image.0.2.5",
       "releases": [
         "0.12.12+image.0.2.5"

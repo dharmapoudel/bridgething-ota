@@ -22,7 +22,7 @@ manifest = {
         channel: {
             "name": channel,
             "stability": "stable",
-            "isDefault": True,
+            "default": True,
             "latest": composite,
             "releases": [composite],
         }
