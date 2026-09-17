@@ -1,6 +1,6 @@
 {
   "manifest_version": 1,
-  "updated_at": "2026-09-17T03:22:51Z",
+  "updated_at": "2026-09-17T03:34:40Z",
   "channels": {
     "stable": {
       "name": "stable",
@@ -21,7 +21,10 @@
       "builtin_webapps": {},
       "wakeword": null,
       "artifacts": {
-        "daemon": null,
+        "daemon": {
+          "size": 47170496,
+          "sha256": "218d5507409612873a24bbf2a73b5ec8152ce852b71e36da896584e54de745a9"
+        },
         "daemon_zst": {
           "size": 12763539,
           "sha256": "c7ab1e91b20ed70f711a853ce0d485afa3f5d143fc0b2d357cafd4e65a77bc15"

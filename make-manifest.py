@@ -1,9 +1,15 @@
 #!/usr/bin/env python3
 """Generate manifest.json for the dharma Bridgething OTA host.
 
-Usage: make-manifest.py <bridgething.zst> <daemon_version> <image_version> <out_dir>
+Usage: make-manifest.py <bridgething.zst> <bridgething-plain> <daemon_version> <image_version> <out_dir>
 Writes <out_dir>/manifest.json. The .zst must already be staged at
 <out_dir>/daemon/<channel>/<daemon_version>/bridgething.zst (channel=stable).
+
+Both digests are required: the device downloads daemon_zst and decompresses
+it, verifying the result against the daemon (uncompressed) digest. With
+daemon=null the device falls back to fetching the uncompressed `bridgething`
+binary, which is not staged here (daemon_piece in
+crates/delivery/core/src/ota/service.rs).
 
 WIRE FORMAT WARNING: the daemon's OtaDiscoverManifest struct applies
 `rename_all(serialize = "camelCase")` — serialize ONLY. When the device
@@ -15,12 +21,14 @@ snake_case throughout. Do NOT "fix" this to camelCase.
 import hashlib, json, os, sys
 from datetime import datetime, timezone
 
-zst_path, daemon_version, image_version, out_dir = sys.argv[1:5]
+zst_path, plain_path, daemon_version, image_version, out_dir = sys.argv[1:6]
 channel = "stable"
 composite = f"{daemon_version}+image.{image_version}"
 
 size = os.path.getsize(zst_path)
 sha256 = hashlib.sha256(open(zst_path, "rb").read()).hexdigest()
+plain_size = os.path.getsize(plain_path)
+plain_sha256 = hashlib.sha256(open(plain_path, "rb").read()).hexdigest()
 
 manifest = {
     "manifest_version": 1,
@@ -43,7 +51,7 @@ manifest = {
             "builtin_webapps": {},
             "wakeword": None,
             "artifacts": {
-                "daemon": None,
+                "daemon": {"size": plain_size, "sha256": plain_sha256},
                 "daemon_zst": {"size": size, "sha256": sha256},
                 "image_swu": None,
                 "image_zck": None,
@@ -70,6 +78,8 @@ for f in ("version", "channel", "artifacts"):
     assert f in rel, f"release field missing: {f}"
 dz = rel["artifacts"]["daemon_zst"]
 assert set(dz) == {"size", "sha256"}, "daemon_zst digest shape wrong"
+d = rel["artifacts"]["daemon"]
+assert set(d) == {"size", "sha256"}, "daemon digest must be present (else device fetches the unstaged plain binary)"
 assert isinstance(ch["default"], bool), "'default' must be a bool"
 
 # Sanity: the artifact URL the daemon will construct must exist on disk.
