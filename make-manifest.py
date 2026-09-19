@@ -2,17 +2,13 @@
 """Generate manifest.json for the dharma Bridgething OTA host.
 
 Usage: make-manifest.py <bridgething.zst> <bridgething-plain> <daemon_version> <image_version> <out_dir>
-       [--webapp <slug>:<version>:<zip_path> ...]
 Writes <out_dir>/manifest.json. The .zst must already be staged at
 <out_dir>/daemon/<channel>/<daemon_version>/bridgething.zst (channel=stable).
-Each --webapp zip must already be staged at
-<out_dir>/webapps/<channel>/<slug>/<version>/<slug>.zip — the exact URL the
-device constructs (OtaArtifactUrls::builtin_webapp).
 
-Both daemon digests are required: the device downloads daemon_zst and
-decompresses it, verifying the result against the daemon (uncompressed)
-digest. With daemon=null the device falls back to fetching the uncompressed
-`bridgething` binary, which is not staged here (daemon_piece in
+Both digests are required: the device downloads daemon_zst and decompresses
+it, verifying the result against the daemon (uncompressed) digest. With
+daemon=null the device falls back to fetching the uncompressed `bridgething`
+binary, which is not staged here (daemon_piece in
 crates/delivery/core/src/ota/service.rs).
 
 WIRE FORMAT WARNING: the daemon's OtaDiscoverManifest struct applies
@@ -25,35 +21,14 @@ snake_case throughout. Do NOT "fix" this to camelCase.
 import hashlib, json, os, sys
 from datetime import datetime, timezone
 
-args = sys.argv[1:]
-zst_path, plain_path, daemon_version, image_version, out_dir = args[0:5]
+zst_path, plain_path, daemon_version, image_version, out_dir = sys.argv[1:6]
 channel = "stable"
 composite = f"{daemon_version}+image.{image_version}"
 
-def digest(path):
-    h = hashlib.sha256()
-    with open(path, "rb") as f:
-        for chunk in iter(lambda: f.read(1 << 20), b""):
-            h.update(chunk)
-    return os.path.getsize(path), h.hexdigest()
-
-size, sha256 = digest(zst_path)
-plain_size, plain_sha256 = digest(plain_path)
-
-builtin_webapps = {}
-webapp_digests = {}
-i = 5
-while i < len(args):
-    assert args[i] == "--webapp", f"unexpected arg: {args[i]}"
-    slug, version, zip_path = args[i + 1].split(":", 2)
-    wsize, wsha = digest(zip_path)
-    builtin_webapps[slug] = version
-    webapp_digests[slug] = {"size": wsize, "sha256": wsha}
-    staged = os.path.join(out_dir, "webapps", channel, slug, version, f"{slug}.zip")
-    assert os.path.isfile(staged), f"missing staged webapp: {staged}"
-    assert os.path.abspath(zip_path) == os.path.abspath(staged), f"zip path != staged path: {zip_path}"
-    print(f"webapp {slug} {version}: sha256={wsha[:16]}... size={wsize}")
-    i += 2
+size = os.path.getsize(zst_path)
+sha256 = hashlib.sha256(open(zst_path, "rb").read()).hexdigest()
+plain_size = os.path.getsize(plain_path)
+plain_sha256 = hashlib.sha256(open(plain_path, "rb").read()).hexdigest()
 
 manifest = {
     "manifest_version": 1,
@@ -73,7 +48,7 @@ manifest = {
             "channel": channel,
             "yanked": None,
             "deprecated": False,
-            "builtin_webapps": builtin_webapps,
+            "builtin_webapps": {},
             "wakeword": None,
             "artifacts": {
                 "daemon": {"size": plain_size, "sha256": plain_sha256},
@@ -81,7 +56,7 @@ manifest = {
                 "image_swu": None,
                 "image_zck": None,
                 "image_boot_zck": None,
-                "webapps": webapp_digests,
+                "webapps": {},
                 "wakeword": None,
                 "daemon_patches": {},
             },
@@ -106,9 +81,6 @@ assert set(dz) == {"size", "sha256"}, "daemon_zst digest shape wrong"
 d = rel["artifacts"]["daemon"]
 assert set(d) == {"size", "sha256"}, "daemon digest must be present (else device fetches the unstaged plain binary)"
 assert isinstance(ch["default"], bool), "'default' must be a bool"
-for slug, wd in rel["artifacts"]["webapps"].items():
-    assert set(wd) == {"size", "sha256"}, f"webapp {slug} digest shape wrong"
-    assert slug in rel["builtin_webapps"], f"webapp {slug} missing from builtin_webapps map"
 
 # Sanity: the artifact URL the daemon will construct must exist on disk.
 expected = os.path.join(out_dir, "daemon", channel, daemon_version, "bridgething.zst")

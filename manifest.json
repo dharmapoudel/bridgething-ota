@@ -1,20 +1,20 @@
 {
   "manifest_version": 1,
-  "updated_at": "2026-09-18T20:52:41Z",
+  "updated_at": "2026-09-19T01:05:56Z",
   "channels": {
     "stable": {
       "name": "stable",
       "stability": "stable",
       "default": true,
-      "latest": "0.13.2+image.0.2.5",
+      "latest": "0.13.3+image.0.2.5",
       "releases": [
-        "0.13.2+image.0.2.5"
+        "0.13.3+image.0.2.5"
       ]
     }
   },
   "releases": {
-    "0.13.2+image.0.2.5": {
-      "version": "0.13.2+image.0.2.5",
+    "0.13.3+image.0.2.5": {
+      "version": "0.13.3+image.0.2.5",
       "channel": "stable",
       "yanked": null,
       "deprecated": false,
@@ -23,11 +23,11 @@
       "artifacts": {
         "daemon": {
           "size": 46973744,
-          "sha256": "940e06c80d9dada88005d1a7c10a832407282d3bbba2b402d79c5e593ac05ac4"
+          "sha256": "1ff5be54fbca669ec112a2632f07491808acbc4c41256d389f62b50fcca5746d"
         },
         "daemon_zst": {
-          "size": 12763329,
-          "sha256": "2b427c552b559ba92c897a1bf1d21eb40e3b52a431900d795fa4af80d0634b72"
+          "size": 12764215,
+          "sha256": "280f3ead69bd29a6a4cc234190b0fae87f57418bcd9185bcce7a73b0b90f411e"
         },
         "image_swu": null,
         "image_zck": null,
