@@ -1,6 +1,6 @@
 {
  "manifest_version": 1,
- "updated_at": "2026-09-20T13:00:06Z",
+ "updated_at": "2026-09-20T16:00:38Z",
  "channels": {
   "stable": {
    "name": "stable",
@@ -73,11 +73,11 @@
    "artifacts": {
     "daemon": {
      "size": 48874976,
-     "sha256": "c701cad6f9b90fe5cdf12090ab7ba58ab4b33973024a384d12ea4b2a15443411"
+     "sha256": "33c618a6b155da07252b5bc47d8f178126e2f0b90b825d9fe6faaaf2f357046d"
     },
     "daemon_zst": {
-     "size": 13336045,
-     "sha256": "37961aeb6d6169fbaf97d7b387e85f2dfa80bd9b5ec2a744c70e092f43a7e377"
+     "size": 13356331,
+     "sha256": "16ea7f7229dc9f570ce291a29ae341a4a10bbb88898630d63ac38973f9fb1606"
     },
     "image_swu": null,
     "image_zck": null,
