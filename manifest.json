@@ -1,91 +1,116 @@
 {
- "manifest_version": 1,
- "updated_at": "2026-09-20T16:00:38Z",
- "channels": {
-  "stable": {
-   "name": "stable",
-   "stability": "stable",
-   "default": true,
-   "latest": "0.13.6+image.0.2.5",
-   "releases": [
-    "0.13.4+image.0.2.5",
-    "0.13.5+image.0.2.5",
-    "0.13.6+image.0.2.5"
-   ]
-  }
- },
- "releases": {
-  "0.13.4+image.0.2.5": {
-   "version": "0.13.4+image.0.2.5",
-   "channel": "stable",
-   "yanked": null,
-   "deprecated": false,
-   "builtin_webapps": {},
-   "wakeword": null,
-   "artifacts": {
-    "daemon": {
-     "size": 47170608,
-     "sha256": "b44744bd87a48b4e4f5ff6f44ef4c2c49e82eb7cc5b0bc0e9d7be5bb9e22ab19"
-    },
-    "daemon_zst": {
-     "size": 12764465,
-     "sha256": "b11ee69665a97a723a0d56845ba1602793e8f8ec46ff7a025421e605461fd36e"
-    },
-    "image_swu": null,
-    "image_zck": null,
-    "image_boot_zck": null,
-    "webapps": {},
-    "wakeword": null,
-    "daemon_patches": {}
-   }
+  "manifest_version": 1,
+  "updated_at": "2026-09-20T20:38:45Z",
+  "channels": {
+    "stable": {
+      "name": "stable",
+      "stability": "stable",
+      "default": true,
+      "latest": "0.13.7+image.0.2.5",
+      "releases": [
+        "0.13.4+image.0.2.5",
+        "0.13.5+image.0.2.5",
+        "0.13.6+image.0.2.5",
+        "0.13.7+image.0.2.5"
+      ]
+    }
   },
-  "0.13.5+image.0.2.5": {
-   "version": "0.13.5+image.0.2.5",
-   "channel": "stable",
-   "yanked": null,
-   "deprecated": false,
-   "builtin_webapps": {},
-   "wakeword": null,
-   "artifacts": {
-    "daemon": {
-     "size": 47236368,
-     "sha256": "aca0d9553f31faea38e8c6cd44702c2631d806fe9220dc0b3fd69eb00677fb4d"
+  "releases": {
+    "0.13.4+image.0.2.5": {
+      "version": "0.13.4+image.0.2.5",
+      "channel": "stable",
+      "yanked": null,
+      "deprecated": false,
+      "builtin_webapps": {},
+      "wakeword": null,
+      "artifacts": {
+        "daemon": {
+          "size": 47170608,
+          "sha256": "b44744bd87a48b4e4f5ff6f44ef4c2c49e82eb7cc5b0bc0e9d7be5bb9e22ab19"
+        },
+        "daemon_zst": {
+          "size": 12764465,
+          "sha256": "b11ee69665a97a723a0d56845ba1602793e8f8ec46ff7a025421e605461fd36e"
+        },
+        "image_swu": null,
+        "image_zck": null,
+        "image_boot_zck": null,
+        "webapps": {},
+        "wakeword": null,
+        "daemon_patches": {}
+      }
     },
-    "daemon_zst": {
-     "size": 12786554,
-     "sha256": "2402e99aeec98448b493c7459de21a74c5d55e05eef25396da81c55e00d6c368"
+    "0.13.5+image.0.2.5": {
+      "version": "0.13.5+image.0.2.5",
+      "channel": "stable",
+      "yanked": null,
+      "deprecated": false,
+      "builtin_webapps": {},
+      "wakeword": null,
+      "artifacts": {
+        "daemon": {
+          "size": 47236368,
+          "sha256": "aca0d9553f31faea38e8c6cd44702c2631d806fe9220dc0b3fd69eb00677fb4d"
+        },
+        "daemon_zst": {
+          "size": 12786554,
+          "sha256": "2402e99aeec98448b493c7459de21a74c5d55e05eef25396da81c55e00d6c368"
+        },
+        "image_swu": null,
+        "image_zck": null,
+        "image_boot_zck": null,
+        "webapps": {},
+        "wakeword": null,
+        "daemon_patches": {}
+      }
     },
-    "image_swu": null,
-    "image_zck": null,
-    "image_boot_zck": null,
-    "webapps": {},
-    "wakeword": null,
-    "daemon_patches": {}
-   }
-  },
-  "0.13.6+image.0.2.5": {
-   "version": "0.13.6+image.0.2.5",
-   "channel": "stable",
-   "yanked": null,
-   "deprecated": false,
-   "builtin_webapps": {},
-   "wakeword": null,
-   "artifacts": {
-    "daemon": {
-     "size": 48874976,
-     "sha256": "33c618a6b155da07252b5bc47d8f178126e2f0b90b825d9fe6faaaf2f357046d"
+    "0.13.6+image.0.2.5": {
+      "version": "0.13.6+image.0.2.5",
+      "channel": "stable",
+      "yanked": null,
+      "deprecated": false,
+      "builtin_webapps": {},
+      "wakeword": null,
+      "artifacts": {
+        "daemon": {
+          "size": 48874976,
+          "sha256": "33c618a6b155da07252b5bc47d8f178126e2f0b90b825d9fe6faaaf2f357046d"
+        },
+        "daemon_zst": {
+          "size": 13356331,
+          "sha256": "16ea7f7229dc9f570ce291a29ae341a4a10bbb88898630d63ac38973f9fb1606"
+        },
+        "image_swu": null,
+        "image_zck": null,
+        "image_boot_zck": null,
+        "webapps": {},
+        "wakeword": null,
+        "daemon_patches": {}
+      }
     },
-    "daemon_zst": {
-     "size": 13356331,
-     "sha256": "16ea7f7229dc9f570ce291a29ae341a4a10bbb88898630d63ac38973f9fb1606"
-    },
-    "image_swu": null,
-    "image_zck": null,
-    "image_boot_zck": null,
-    "webapps": {},
-    "wakeword": null,
-    "daemon_patches": {}
-   }
+    "0.13.7+image.0.2.5": {
+      "version": "0.13.7+image.0.2.5",
+      "channel": "stable",
+      "yanked": null,
+      "deprecated": false,
+      "builtin_webapps": {},
+      "wakeword": null,
+      "artifacts": {
+        "daemon": {
+          "size": 48940592,
+          "sha256": "9387d3aee62779bf155fc3a1c35e0164d7ecb65a18037149e117c8f062a4745c"
+        },
+        "daemon_zst": {
+          "size": 13375390,
+          "sha256": "c0fcb220749ea11a69ff82c882aee338edd430e63fb574e0989434cc6dae92c4"
+        },
+        "image_swu": null,
+        "image_zck": null,
+        "image_boot_zck": null,
+        "webapps": {},
+        "wakeword": null,
+        "daemon_patches": {}
+      }
+    }
   }
- }
 }
