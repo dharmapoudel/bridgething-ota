@@ -1,12 +1,12 @@
 {
   "manifest_version": 1,
-  "updated_at": "2026-09-21T03:11:15Z",
+  "updated_at": "2026-09-21T11:25:25Z",
   "channels": {
     "stable": {
       "name": "stable",
       "stability": "stable",
       "default": true,
-      "latest": "0.13.11+image.0.2.5",
+      "latest": "0.13.12+image.0.2.5",
       "releases": [
         "0.13.4+image.0.2.5",
         "0.13.5+image.0.2.5",
@@ -14,7 +14,8 @@
         "0.13.7+image.0.2.5",
         "0.13.9+image.0.2.5",
         "0.13.10+image.0.2.5",
-        "0.13.11+image.0.2.5"
+        "0.13.11+image.0.2.5",
+        "0.13.12+image.0.2.5"
       ]
     }
   },
