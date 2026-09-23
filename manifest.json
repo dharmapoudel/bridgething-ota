@@ -1,17 +1,18 @@
 {
   "manifest_version": 1,
-  "updated_at": "2026-09-23T19:21:03Z",
+  "updated_at": "2026-09-23T21:43:59Z",
   "channels": {
     "stable": {
       "name": "stable",
       "stability": "stable",
       "default": true,
-      "latest": "0.13.23+image.0.2.5",
+      "latest": "0.13.24+image.0.2.5",
       "releases": [
         "0.13.20+image.0.2.5",
         "0.13.21+image.0.2.5",
         "0.13.22+image.0.2.5",
-        "0.13.23+image.0.2.5"
+        "0.13.23+image.0.2.5",
+        "0.13.24+image.0.2.5"
       ]
     }
   },
@@ -103,6 +104,30 @@
         "daemon_zst": {
           "size": 13491577,
           "sha256": "4d8b4e7cc50ed4edc94134e3e6328ec068c29a7eb1d102eb9ee9a18e790892af"
+        },
+        "image_swu": null,
+        "image_zck": null,
+        "image_boot_zck": null,
+        "webapps": {},
+        "wakeword": null,
+        "daemon_patches": {}
+      }
+    },
+    "0.13.24+image.0.2.5": {
+      "version": "0.13.24+image.0.2.5",
+      "channel": "stable",
+      "yanked": null,
+      "deprecated": false,
+      "builtin_webapps": {},
+      "wakeword": null,
+      "artifacts": {
+        "daemon": {
+          "size": 49334264,
+          "sha256": "036910809c5a196edf60d41e3c51cd9d2069c5e65e357e95e197071cac9d8912"
+        },
+        "daemon_zst": {
+          "size": 13477963,
+          "sha256": "86380d19573a5bab7c84c51b879a8d86e8b7dc9866b7c03c1b678713362aff80"
         },
         "image_swu": null,
         "image_zck": null,
