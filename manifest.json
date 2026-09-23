@@ -1,394 +1,20 @@
 {
   "manifest_version": 1,
-  "updated_at": "2026-09-23T18:11:40Z",
+  "updated_at": "2026-09-23T18:57:30Z",
   "channels": {
     "stable": {
       "name": "stable",
       "stability": "stable",
       "default": true,
-      "latest": "0.13.21+image.0.2.5",
+      "latest": "0.13.22+image.0.2.5",
       "releases": [
-        "0.13.4+image.0.2.5",
-        "0.13.5+image.0.2.5",
-        "0.13.6+image.0.2.5",
-        "0.13.7+image.0.2.5",
-        "0.13.9+image.0.2.5",
-        "0.13.10+image.0.2.5",
-        "0.13.11+image.0.2.5",
-        "0.13.12+image.0.2.5",
-        "0.13.13+image.0.2.5",
-        "0.13.14+image.0.2.5",
-        "0.13.15+image.0.2.5",
-        "0.13.16+image.0.2.5",
-        "0.13.17+image.0.2.5",
-        "0.13.18+image.0.2.5",
-        "0.13.19+image.0.2.5",
         "0.13.20+image.0.2.5",
-        "0.13.21+image.0.2.5"
+        "0.13.21+image.0.2.5",
+        "0.13.22+image.0.2.5"
       ]
     }
   },
   "releases": {
-    "0.13.4+image.0.2.5": {
-      "version": "0.13.4+image.0.2.5",
-      "channel": "stable",
-      "yanked": null,
-      "deprecated": false,
-      "builtin_webapps": {},
-      "wakeword": null,
-      "artifacts": {
-        "daemon": {
-          "size": 47170608,
-          "sha256": "b44744bd87a48b4e4f5ff6f44ef4c2c49e82eb7cc5b0bc0e9d7be5bb9e22ab19"
-        },
-        "daemon_zst": {
-          "size": 12764465,
-          "sha256": "b11ee69665a97a723a0d56845ba1602793e8f8ec46ff7a025421e605461fd36e"
-        },
-        "image_swu": null,
-        "image_zck": null,
-        "image_boot_zck": null,
-        "webapps": {},
-        "wakeword": null,
-        "daemon_patches": {}
-      }
-    },
-    "0.13.5+image.0.2.5": {
-      "version": "0.13.5+image.0.2.5",
-      "channel": "stable",
-      "yanked": null,
-      "deprecated": false,
-      "builtin_webapps": {},
-      "wakeword": null,
-      "artifacts": {
-        "daemon": {
-          "size": 47236368,
-          "sha256": "aca0d9553f31faea38e8c6cd44702c2631d806fe9220dc0b3fd69eb00677fb4d"
-        },
-        "daemon_zst": {
-          "size": 12786554,
-          "sha256": "2402e99aeec98448b493c7459de21a74c5d55e05eef25396da81c55e00d6c368"
-        },
-        "image_swu": null,
-        "image_zck": null,
-        "image_boot_zck": null,
-        "webapps": {},
-        "wakeword": null,
-        "daemon_patches": {}
-      }
-    },
-    "0.13.6+image.0.2.5": {
-      "version": "0.13.6+image.0.2.5",
-      "channel": "stable",
-      "yanked": null,
-      "deprecated": false,
-      "builtin_webapps": {},
-      "wakeword": null,
-      "artifacts": {
-        "daemon": {
-          "size": 48874976,
-          "sha256": "33c618a6b155da07252b5bc47d8f178126e2f0b90b825d9fe6faaaf2f357046d"
-        },
-        "daemon_zst": {
-          "size": 13356331,
-          "sha256": "16ea7f7229dc9f570ce291a29ae341a4a10bbb88898630d63ac38973f9fb1606"
-        },
-        "image_swu": null,
-        "image_zck": null,
-        "image_boot_zck": null,
-        "webapps": {},
-        "wakeword": null,
-        "daemon_patches": {}
-      }
-    },
-    "0.13.7+image.0.2.5": {
-      "version": "0.13.7+image.0.2.5",
-      "channel": "stable",
-      "yanked": null,
-      "deprecated": false,
-      "builtin_webapps": {},
-      "wakeword": null,
-      "artifacts": {
-        "daemon": {
-          "size": 48940592,
-          "sha256": "9387d3aee62779bf155fc3a1c35e0164d7ecb65a18037149e117c8f062a4745c"
-        },
-        "daemon_zst": {
-          "size": 13375390,
-          "sha256": "c0fcb220749ea11a69ff82c882aee338edd430e63fb574e0989434cc6dae92c4"
-        },
-        "image_swu": null,
-        "image_zck": null,
-        "image_boot_zck": null,
-        "webapps": {},
-        "wakeword": null,
-        "daemon_patches": {}
-      }
-    },
-    "0.13.9+image.0.2.5": {
-      "version": "0.13.9+image.0.2.5",
-      "channel": "stable",
-      "yanked": null,
-      "deprecated": false,
-      "builtin_webapps": {},
-      "wakeword": null,
-      "artifacts": {
-        "daemon": {
-          "size": 49268728,
-          "sha256": "018a7ad867c490c5679715c6beb294455c95c00f63fe2a11147151ca51436735"
-        },
-        "daemon_zst": {
-          "size": 13452007,
-          "sha256": "29730662f62841429d09efb91a84cfc14a13cdb556341a46a170447e8884ec38"
-        },
-        "image_swu": null,
-        "image_zck": null,
-        "image_boot_zck": null,
-        "webapps": {},
-        "wakeword": null,
-        "daemon_patches": {}
-      }
-    },
-    "0.13.10+image.0.2.5": {
-      "version": "0.13.10+image.0.2.5",
-      "channel": "stable",
-      "yanked": null,
-      "deprecated": false,
-      "builtin_webapps": {},
-      "wakeword": null,
-      "artifacts": {
-        "daemon": {
-          "size": 49268728,
-          "sha256": "bc0b3b20f79ca36856f5a8c90f1049a72e9c12cb5288e2479bfc221b63ab3d9a"
-        },
-        "daemon_zst": {
-          "size": 13416467,
-          "sha256": "89ea1b61754c8189728ee0644aa5d273f6cf142b0021137021689e13a80a9067"
-        },
-        "image_swu": null,
-        "image_zck": null,
-        "image_boot_zck": null,
-        "webapps": {},
-        "wakeword": null,
-        "daemon_patches": {}
-      }
-    },
-    "0.13.11+image.0.2.5": {
-      "version": "0.13.11+image.0.2.5",
-      "channel": "stable",
-      "yanked": null,
-      "deprecated": false,
-      "builtin_webapps": {},
-      "wakeword": null,
-      "artifacts": {
-        "daemon": {
-          "size": 49268728,
-          "sha256": "10080390da6f2b64908b49de1cf2a5da7bdb4804bdcb1a2a4ff8b754b6919d0d"
-        },
-        "daemon_zst": {
-          "size": 13406525,
-          "sha256": "96e8d9675e35dd4308c4856a4bd8278e0ac0e3246dadbe3ce8885fc9a89ac6f5"
-        },
-        "image_swu": null,
-        "image_zck": null,
-        "image_boot_zck": null,
-        "webapps": {},
-        "wakeword": null,
-        "daemon_patches": {}
-      }
-    },
-    "0.13.12+image.0.2.5": {
-      "version": "0.13.12+image.0.2.5",
-      "channel": "stable",
-      "yanked": null,
-      "deprecated": false,
-      "builtin_webapps": {},
-      "wakeword": null,
-      "artifacts": {
-        "daemon": {
-          "size": 49268728,
-          "sha256": "ed4057e75a2d8081209c689b559e3715907c08ae11e8ea138706c89203641a8c"
-        },
-        "daemon_zst": {
-          "size": 13444967,
-          "sha256": "592b2b2e762b5c9fb3ef8ac5cd2aeaa7c55e054c528d6de995c332e2b0ffa9d5"
-        },
-        "image_swu": null,
-        "image_zck": null,
-        "image_boot_zck": null,
-        "webapps": {},
-        "wakeword": null,
-        "daemon_patches": {}
-      }
-    },
-    "0.13.13+image.0.2.5": {
-      "version": "0.13.13+image.0.2.5",
-      "channel": "stable",
-      "yanked": null,
-      "deprecated": false,
-      "builtin_webapps": {},
-      "wakeword": null,
-      "artifacts": {
-        "daemon": {
-          "size": 49268728,
-          "sha256": "e296233ada5814bd99b1a3be6f4ffc0adba7c2dbff67cee29e50f1fe43bbd68b"
-        },
-        "daemon_zst": {
-          "size": 13461341,
-          "sha256": "fb480a7de3aa47b3ebc6904a6e9dca0dd75f78c910968bc7a18363513d68f954"
-        },
-        "image_swu": null,
-        "image_zck": null,
-        "image_boot_zck": null,
-        "webapps": {},
-        "wakeword": null,
-        "daemon_patches": {}
-      }
-    },
-    "0.13.14+image.0.2.5": {
-      "version": "0.13.14+image.0.2.5",
-      "channel": "stable",
-      "yanked": null,
-      "deprecated": false,
-      "builtin_webapps": {},
-      "wakeword": null,
-      "artifacts": {
-        "daemon": {
-          "size": 49268728,
-          "sha256": "6ec871a892996adf867eb75abc7704067958d51a79fb8141f83d96f129a4c47c"
-        },
-        "daemon_zst": {
-          "size": 13450316,
-          "sha256": "0c1bcd26ff7d1bc1fca68972d8fc6249020ef86b9405735eb465bf81f602e663"
-        },
-        "image_swu": null,
-        "image_zck": null,
-        "image_boot_zck": null,
-        "webapps": {},
-        "wakeword": null,
-        "daemon_patches": {}
-      }
-    },
-    "0.13.15+image.0.2.5": {
-      "version": "0.13.15+image.0.2.5",
-      "channel": "stable",
-      "yanked": null,
-      "deprecated": false,
-      "builtin_webapps": {},
-      "wakeword": null,
-      "artifacts": {
-        "daemon": {
-          "size": 49268728,
-          "sha256": "2825a4facd0f2cabbe2295efe7f932918cf1fec4305c39d0a911b9c70d184327"
-        },
-        "daemon_zst": {
-          "size": 13459277,
-          "sha256": "e52e02181657d86d0bb1068d9af92bfa900549e8dc75ec67fa12f3e86db37391"
-        },
-        "image_swu": null,
-        "image_zck": null,
-        "image_boot_zck": null,
-        "webapps": {},
-        "wakeword": null,
-        "daemon_patches": {}
-      }
-    },
-    "0.13.16+image.0.2.5": {
-      "version": "0.13.16+image.0.2.5",
-      "channel": "stable",
-      "yanked": null,
-      "deprecated": false,
-      "builtin_webapps": {},
-      "wakeword": null,
-      "artifacts": {
-        "daemon": {
-          "size": 49268728,
-          "sha256": "34fecb755274c6bf07bdaee012e68a1113df8ebbc54e121b0d20ac780da30c7f"
-        },
-        "daemon_zst": {
-          "size": 13461378,
-          "sha256": "3106145b4515923155b04809c63170ecc1317ce19a72e7961e020cfd52544450"
-        },
-        "image_swu": null,
-        "image_zck": null,
-        "image_boot_zck": null,
-        "webapps": {},
-        "wakeword": null,
-        "daemon_patches": {}
-      }
-    },
-    "0.13.17+image.0.2.5": {
-      "version": "0.13.17+image.0.2.5",
-      "channel": "stable",
-      "yanked": null,
-      "deprecated": false,
-      "builtin_webapps": {},
-      "wakeword": null,
-      "artifacts": {
-        "daemon": {
-          "size": 49334264,
-          "sha256": "be8d6e5083c6af5bb37f60a256b8e98d4dbabc9667596e3f003491bf948cee0d"
-        },
-        "daemon_zst": {
-          "size": 13479187,
-          "sha256": "d08de8ec132aa6e68f5a193542245d3a6b7fca1e247ade4f6477659a5e46fd97"
-        },
-        "image_swu": null,
-        "image_zck": null,
-        "image_boot_zck": null,
-        "webapps": {},
-        "wakeword": null,
-        "daemon_patches": {}
-      }
-    },
-    "0.13.18+image.0.2.5": {
-      "version": "0.13.18+image.0.2.5",
-      "channel": "stable",
-      "yanked": null,
-      "deprecated": false,
-      "builtin_webapps": {},
-      "wakeword": null,
-      "artifacts": {
-        "daemon": {
-          "size": 49268728,
-          "sha256": "1baaf706dbc79cd2c94f77fdd64677d37393552d1c514c401bcb60e413dba596"
-        },
-        "daemon_zst": {
-          "size": 13489426,
-          "sha256": "781c46c995b84d70d19ba3ba35a53a57ee71976aaf02bb7e7e97fa7784db362b"
-        },
-        "image_swu": null,
-        "image_zck": null,
-        "image_boot_zck": null,
-        "webapps": {},
-        "wakeword": null,
-        "daemon_patches": {}
-      }
-    },
-    "0.13.19+image.0.2.5": {
-      "version": "0.13.19+image.0.2.5",
-      "channel": "stable",
-      "yanked": null,
-      "deprecated": false,
-      "builtin_webapps": {},
-      "wakeword": null,
-      "artifacts": {
-        "daemon": {
-          "size": 49268728,
-          "sha256": "ee6dc599bd34ad490e2c7112f78ade0e4524a5865ab4e3de560bdcdc1bacd839"
-        },
-        "daemon_zst": {
-          "size": 13491749,
-          "sha256": "0d85210cee4fe8a8e843302e45737f792dc7482ac6fe1589f857c02c91ba08ff"
-        },
-        "image_swu": null,
-        "image_zck": null,
-        "image_boot_zck": null,
-        "webapps": {},
-        "wakeword": null,
-        "daemon_patches": {}
-      }
-    },
     "0.13.20+image.0.2.5": {
       "version": "0.13.20+image.0.2.5",
       "channel": "stable",
@@ -428,6 +54,30 @@
         "daemon_zst": {
           "size": 13479729,
           "sha256": "0576fea11637aa0de882270016fb64bef63239dd3f360754cb87401f6a38a1e0"
+        },
+        "image_swu": null,
+        "image_zck": null,
+        "image_boot_zck": null,
+        "webapps": {},
+        "wakeword": null,
+        "daemon_patches": {}
+      }
+    },
+    "0.13.22+image.0.2.5": {
+      "version": "0.13.22+image.0.2.5",
+      "channel": "stable",
+      "yanked": null,
+      "deprecated": false,
+      "builtin_webapps": {},
+      "wakeword": null,
+      "artifacts": {
+        "daemon": {
+          "size": 49268728,
+          "sha256": "eb8711b7b49184c7f63d9973b126fab90de04117fce5d489d2a0272ca17b6caa"
+        },
+        "daemon_zst": {
+          "size": 13476336,
+          "sha256": "3babfb2d57108e876f00fe0762165a58d6aa085ac516a21b6cb9d4cb3e1b85eb"
         },
         "image_swu": null,
         "image_zck": null,
