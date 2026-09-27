@@ -1,6 +1,6 @@
 {
   "manifest_version": 1,
-  "updated_at": "2026-09-27T01:16:11Z",
+  "updated_at": "2026-09-27T01:34:01Z",
   "channels": {
     "stable": {
       "name": "stable",
@@ -147,12 +147,12 @@
       "wakeword": null,
       "artifacts": {
         "daemon": {
-          "size": 49268744,
-          "sha256": "b342901c8adda929b0b688a1137bac3c695a9bb1bb3a2919db23bd56c6e7af2f"
+          "size": 47859520,
+          "sha256": "248a88d467be49c707742a769b8ede320e8b1eb61216cd67dc8e00f996369a6b"
         },
         "daemon_zst": {
-          "size": 13492297,
-          "sha256": "7c314507dcefd8a1336be9e2ff0cc344cfa2f18c3eac5d1190062709d99bb6ba"
+          "size": 13211166,
+          "sha256": "06dfda3a8dbc0245cea5df378d130ad4c0bdb8dd6677ac402f0e24a2304656ac"
         },
         "image_swu": null,
         "image_zck": null,
